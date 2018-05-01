@@ -1,6 +1,6 @@
-# fb
+# vue-mobile-template
 
-> A Vue.js project
+> 一个可能会常用的vue模板，添加了normalize，vw来自适应移动端,只需要在`.postcssrc.js`中设置weidth和height，就可以用设计稿的宽高来进行切图
 
 ## Build Setup
 
