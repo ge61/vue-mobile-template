@@ -52,6 +52,7 @@
           awesome-vue
         </a>
       </li>
+      <p>手机号过滤：{{tel | filterTel}}</p>
     </ul>
   </div>
 </template>
@@ -61,7 +62,15 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      tel: '17621578602'
+    }
+  },
+  filters: {
+    filterTel (str) {
+      let start = str.slice(0, 4)
+      let end = str.slice(-2)
+      return `${start}******${end}`
     }
   }
 }

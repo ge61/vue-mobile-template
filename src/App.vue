@@ -8,8 +8,11 @@
 export default {
   name: 'App'
 }
+
 </script>
 
 <style>
-img { content: normal !important; }
+img {
+  content: normal !important;
+}
 </style>
